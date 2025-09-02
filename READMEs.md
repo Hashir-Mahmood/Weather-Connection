@@ -1,0 +1,2 @@
+This is a project to help build on my api knowledge 
+this will connect to the weather api and i will build a smart gui to develop my ux knowledge
