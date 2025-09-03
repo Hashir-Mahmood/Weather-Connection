@@ -19,11 +19,40 @@
         <button type="submit" name="action" value="location">Use my location</button>
     </form>
 
-    <h1> {{ location }}'s weather</h1>
+    <header>
+        <h2 class="weather-head"> {{ location }}'s weather<h2>
+
+    </header>
+
+    <section class="weather-card">
+    <div class="main-info">
+        <span class="temp">{{tempreature}}</span>
+    </div>
+    <div class="details">
+        <span>Humidity: 55%</span>
+        <span>Wind: 10 km/h</span>
+    </div>
+
+
+    </section>
+
 
     
-    
+
+    <footer class="app-footer">
+    <p>&copy; 2025 Largely Accurate WeatherApp</p>
+  
+        <nav class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+  
+    <div class="footer-info">
+        <p>Data provided by OpenWeatherMap</p>
+    </div>>
 
 
+    </footer>
 
 </html>
