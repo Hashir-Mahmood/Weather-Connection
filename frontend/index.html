@@ -13,7 +13,17 @@
     <form action="/search" method="get">
         <label for="search">Search City:</label>
         <input type="text" id="search" name="q" placeholder="Enter city name...">
-        <button type="submit">Search</button>
+
+
+        <button type="submit" name="action" value="search">Submit</button>
+        <button type="submit" name="action" value="location">Use my location</button>
     </form>
+
+    <h1> {{ location }}'s weather</h1>
+
+    
+    
+
+
 
 </html>

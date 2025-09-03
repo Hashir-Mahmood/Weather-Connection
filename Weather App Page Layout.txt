@@ -1,0 +1,59 @@
+Weather App Page Layout
+
+Header
+
+App logo or title: “Largely Accurate WeatherApp”
+
+Optional tagline: “Forecasts you can almost trust”
+
+Search Section
+
+Search bar: Enter city name
+
+Button: “Get Weather”
+
+Option: “Use my location”
+
+Current Weather Section
+
+City name and country
+
+Current temperature (°C/°F toggle nearby)
+
+Weather description (e.g., “Mostly Cloudy”)
+
+Icon (sun, cloud, rain, etc.)
+
+“Feels like” temperature
+
+Weather Details Panel
+
+Humidity
+
+Wind speed
+
+Pressure
+
+Sunrise / Sunset times
+
+Forecast Section
+
+Small cards for next few days:
+
+Day of the week
+
+Temperature range
+
+Small weather icon
+
+Optional Fun Section
+
+Random weather fact / witty remark (fits your “Largely Accurate” theme)
+
+Footer
+
+Credits (e.g., “Powered by OpenWeather API”)
+
+Version number (e.g., v1.0)
+
+Link to GitHub repo or author name
