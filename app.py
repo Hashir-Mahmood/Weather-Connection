@@ -13,7 +13,15 @@ def weather():
 
 @app.route('/about')
 def about():
-    return "this is just empty"
+    return render_template("about.html")
+
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
