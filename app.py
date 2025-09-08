@@ -31,7 +31,7 @@ def search():
                 if response.status_code == 200:
                     data = response.json()
                     location = data["name"]
-                    temperature = round(data["main"]["temp"],1)
+                    temperature = data["main"]["temp"]
                     humidity = data["main"]["humidity"]
                     wind_speed = data["wind"]["speed"]
                 else:
@@ -59,7 +59,7 @@ def search():
     return render_template(
         "index.html",
         location=location,
-        temperature=temperature,
+        temperature=round(temperature,1),
         humidity=humidity,
         wind_speed=wind_speed,
         error=error,
