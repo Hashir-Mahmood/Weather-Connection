@@ -6,63 +6,52 @@
     <title>Largely Accurate WeatherApp</title>
     <link rel="icon" href="{{ url_for('static', filename='images/bbc.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
 </head>
 <body>
     <h1>Largely Accurate WeatherApp</h1>
     <p>Because 100% accuracy is overrated.</p>
 
-    <form action="/search" method="get">
+    <form action="{{ url_for('search') }}" method="get">
         <label for="search">Search City:</label>
         <input type="text" id="search" name="q" placeholder="Enter city name...">
-
 
         <button type="submit" name="action" value="search">Submit</button>
         <button type="submit" name="action" value="location">Use my location</button>
     </form>
-
+    
     <header>
-        <h2 class="weather-head"> {{ location }}'s weather<h2>
-
+        <h2 class="weather-head">{{ location }}'s weather</h2>
     </header>
 
     <ul>
-        Hour
-        
-        Day
-
-        Week
+        <li><button type="button">Hourly</button></li>
+        <li><button type="button">Daily</button></li>
+        <li><button type="button">Weekly</button></li>
     </ul>
 
     <section class="weather-card">
-    <div class="main-info">
-        <span class="temp">{{tempreature}}</span>
-    </div>
-    <div class="details">
-        <span>Humidity: 55%</span>
-        <span>Wind: 10 km/h</span>
-    </div>
-
-
+        <div class="main-info">
+            <span class="temp">{{ temperature }}</span>
+        </div>
+        <div class="details">
+            <span>Humidity: {{ humidity }}%</span>
+            <span>Wind: {{ wind_speed }} km/h</span>
+        </div>
     </section>
 
-
-    
-
     <footer class="app-footer">
-    <p>&copy; 2025 Largely Accurate WeatherApp</p>
+        <p>&copy; 2025 Largely Accurate WeatherApp</p>
   
         <nav class="footer-nav">
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
-            <a href="privacy">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
         </nav>
   
-    <div class="footer-info">
-        <span>Data provided by</span> <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
-    </div>
-
-
+        <div class="footer-info">
+            <span>Data provided by</span> 
+            <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+        </div>
     </footer>
-
+</body>
 </html>
